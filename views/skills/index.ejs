@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development Skills</title>
+  </head>
+  <body>
+    <h1>My Development Skills</h1>
+    <ul>
+      <% skills.forEach(function(skill){ %>
+      <li><a href="/skills/<%=skill.id%>"><%= skill.name %></a></li>
+      <%})%>
+    </ul>
+  </body>
+</html>
