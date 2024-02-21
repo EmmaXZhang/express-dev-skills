@@ -39,6 +39,7 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+  console.log("test");
   //update content by id+body
   skill.update(req.params.id, req.body);
   res.redirect(`/skills/${req.params.id}`);
