@@ -43,9 +43,16 @@ function deleteOne(id) {
   skills.splice(index, 1);
 }
 
+function update(id, updateSkill) {
+  id = parseInt(id);
+  const skill = skills.find((skill) => skill.id === id);
+  Object.assign(skill, updateSkill);
+}
+
 module.exports = {
   getAll,
   getOne,
   create,
   deleteOne,
+  update,
 };

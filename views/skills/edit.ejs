@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Development skills</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/skills">&lt; Back </a>
+    </nav>
+    <h1><%= title %></h1>
+    <form action="/skills/<%=oldSkill.id%>/_method=PUT" method="POST">
+      <label>Skill Name:</label>
+      <input type="text" name="name" value="<%=oldSkill.name%>" />
+      <label>Skill level:</label>
+      <input type="text" name="level" value="<%=oldSkill.level%>" />
+      <button type="submit">Update skill</button>
+    </form>
+  </body>
+</html>
